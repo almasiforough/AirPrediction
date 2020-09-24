@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Grid, Typography } from "@material-ui/core";
 import useStyles from "./SearchBox.styles";
-import { AirQualityContext } from "../../contexts/AirQualityContext";
+import { AirQualityContext } from "../../context/AirQualityContext";
 
 export default function AirQualityInfo() {
   const classes = useStyles();

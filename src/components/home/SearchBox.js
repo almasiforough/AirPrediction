@@ -10,7 +10,7 @@ import useStyles from "./SearchBox.styles";
 import CityNameItem from "./CityNameItem";
 import Apis from "../../constants/Apis";
 import { Token } from "../../constants/Token";
-import { fetchGet } from "../../helper/fetchHelpers";
+import { fetchGet } from "../../helper/fetchHelper";
 
 export default function SerachBox() {
   const classes = useStyles();
@@ -65,7 +65,7 @@ export default function SerachBox() {
             placeholder='Example: Melbourne'
             className={classes.searchCityInput}
             onKeyDown={(event) => {
-              if (event.which === 13 || event.keyCode === 13) {
+              if ( event.keyCode === 13) {
                 getCities();
               }
             }}

@@ -1,17 +1,18 @@
-async function fetchGet(url){
-    return new Promise((res)=>{
-        let status;
-        fetch(url)
-        .then((Response)=>{
-            status=Response.json();
-            return response.json();
-        })
-        .then((responseJSON) => {
-            res({ responseJSON, status });
-          })
-          .catch(() => {
-            res({ responseJSON: [], status: 500 });
-          });
+async function fetchGet(url) {
+  let status;
+  return fetch(url)
+    .then((response) => {
+      status = response.status;
+      return response.json();
     })
+    .then((responseJSON) => {
+      return { responseJSON, status };
+    })
+    .catch(() => {
+      return { responseJSON: [], status: status };
+    });
 }
-export {fetchGet}
+export { fetchGet };
+
+
+

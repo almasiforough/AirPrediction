@@ -1,5 +1,3 @@
-# Air Quality Index
-
 ## Introduction
 
 Thanks for taking a look at the Drawboard exercise, we appreciate you taking the time to give this a bash - hopefully you will find it fun to complete.
